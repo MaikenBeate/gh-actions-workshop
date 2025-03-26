@@ -77,6 +77,9 @@ jobs:
   post-comment:
     runs-on: ubuntu-latest
 
+    permissions:
+      pull-requests: write
+
     needs: [test_job, lint_job]
 
     steps:
